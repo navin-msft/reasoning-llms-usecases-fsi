@@ -34,7 +34,12 @@ To run the notebook, follow these steps:
     pip install -r requirements.txt
     ```
 
-4. Create a `.env` file in the root directory and add your Azure OpenAI endpoint and API key:
+4. Copy the `env_sample` file to `.env` and add your Azure OpenAI endpoint and API key:
+    ```sh
+    cp env_sample .env
+    ```
+
+    Edit the `.env` file to add your Azure OpenAI endpoint and API key:
     ```plaintext
     AZURE_OPENAI_ENDPOINT=your_endpoint
     AZURE_OPENAI_API_KEY=your_api_key
