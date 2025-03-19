@@ -57,5 +57,3 @@ This prompt is designed for ChatGPT 4o or ChatGPT o1 to assist insurance claims 
 > - “Cost Estimate: \$12,000 for structural (drywall, flooring, cabinets) + \$2,000 for personal property (damaged appliances, furniture). The mold-specific cleanup is \$2,500.”
 
 
-
-gpt-4o will make deductible and not detailed and formatted.
