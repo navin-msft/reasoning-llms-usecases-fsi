@@ -45,6 +45,4 @@ To run the notebook, follow these steps:
     AZURE_OPENAI_API_KEY=your_api_key
     ```
 
-5. Run the Jupyter Notebook.
-
-6. Follow the instructions in the notebook to execute the cells and observe the results.
+5. Follow the instructions in the notebook to execute the cells and observe the results.
