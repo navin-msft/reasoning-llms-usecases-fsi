@@ -13,7 +13,7 @@ This repository is for the FSI Hackathon. It contains various use case examples 
 - Financial Forecasting
 - Investment Strategy Analysis
 
-## Running the Notebook
+## Executing the notebook to compare model outputs
 
 To run the notebook, follow these steps:
 
