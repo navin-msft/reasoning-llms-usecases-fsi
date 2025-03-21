@@ -1,6 +1,6 @@
 # FSI reasoning usecase examples lab
 
-This repository is for the FSI Hackathon. It contains various use case examples for reasoning with language models.
+This repository is for the FSI Hackathon. It contains various use case examples for reasoning with LLMs.
 
 ## Use Cases
 
