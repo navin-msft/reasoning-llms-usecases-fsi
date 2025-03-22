@@ -1,24 +1,16 @@
-<title>
-Fraud Detection at Contoso Bank: Prioritizing Potential Fraud Cases
-</title>
+# Fraud Detection at Contoso Bank: Prioritizing Potential Fraud Cases
 
-<question>
+## Question
 As an analyst in Contoso Bank's Fraud Investigation Team, your tasks are:
-
 1. **Shortlist the top 5 customers who are most likely victims of actual fraud**, based on the data provided.
-
 2. **For each of the top 5 customers, provide a rationale** explaining why they should be prioritized for investigation.
-
 3. **Predict which of the top 5 customers are actual fraud cases**.
 
 **Note:** The number of actual fraud cases in the dataset ranges from **0 to 4**. Your analysis should aim to:
-
 - **Identify true fraud cases** to prevent financial loss.
 - **Minimize false positives** to avoid unnecessary customer friction and maintain customer satisfaction.
-</question>
 
-<instruction>
-
+## Instruction
 - Thoroughly analyze the provided datasets to identify patterns and indicators of fraudulent activity.
 - Use quantitative analysis and logical reasoning to support your conclusions.
 - Include all intermediate calculations and reasoning steps.
@@ -26,19 +18,14 @@ As an analyst in Contoso Bank's Fraud Investigation Team, your tasks are:
 - Provide a brief **executive summary** at the beginning of your solution, highlighting your key findings and recommendations.
 - Present your findings in a clear and concise manner, suitable for presentation to the Fraud Investigation Team.
 
-</instruction>
-
-<background>
-
+## Background
 Contoso Bank employs advanced fraud detection systems to monitor transactions and identify potential fraudulent activities in real-time. Recently, the bank's systems have flagged **30 customers** for potential fraud. The Fraud Investigation Team needs to prioritize these cases to efficiently allocate resources and minimize customer friction.
 
 Below are datasets collected from various systems, including transaction logs, customer profiles, device usage patterns, and internal compliance reports. The data includes both relevant and additional information to provide a comprehensive view of each customer's activity.
 
 ---
 
-Dataset 1: Customer Transaction Summary
- 
-This data is represented in a table format.
+### Dataset 1: Customer Transaction Summary
 
 Customer ID Total Transactions Last 24 Hours  Total Amount Last 24 Hours (USD)  Average Transaction Amount (USD)  Flagged Transactions
 C001  5 $250  $50 No
@@ -71,48 +58,44 @@ C027  8 $800  $100  No
 C028  9 $900  $100  No
 C029  2 $200  $100  No
 C030  25  $2,500  $100  Yes
-        
-### Dataset 2: Fraud Risk Scores        
-        
-Visualized as a bar chart displaying risk scores per customer.        
-        
-Customer ID Fraud Risk Score (0 - 100)      
-------------- ----------------------------      
-C001  20      
-C002  95      
-C003  15      
-C004  40      
-C005  88      
-C006  35      
-C007  25      
-C008  30      
-C009  45      
-C010  50      
-C011  60      
-C012  55      
-C013  40      
-C014  42      
-C015  94      
-C016  35      
-C017  40      
-C018  38      
-C019  42      
-C020  50      
-C021  55      
-C022  60      
-C023  70      
-C024  30      
-C025  35      
-C026  40      
-C027  60      
-C028  65      
-C029  70      
-C030  80      
-        
-### Dataset 3: Customer Profiles        
-        
-Contains customer account details and historical information.       
-        
+
+### Dataset 2: Fraud Risk Scores
+
+Customer ID Fraud Risk Score (0 - 100)
+------------- ----------------------------
+C001  20
+C002  95
+C003  15
+C004  40
+C005  88
+C006  35
+C007  25
+C008  30
+C009  45
+C010  50
+C011  60
+C012  55
+C013  40
+C014  42
+C015  94
+C016  35
+C017  40
+C018  38
+C019  42
+C020  50
+C021  55
+C022  60
+C023  70
+C024  30
+C025  35
+C026  40
+C027  60
+C028  65
+C029  70
+C030  80
+
+### Dataset 3: Customer Profiles
+
 Customer ID Account Age (Years) Account Type  Previous Fraud History  VIP Customer
 ------------- --------------------- ------------------------  ------------------------  --------------
 C001  5 Savings No  No
@@ -145,48 +128,44 @@ C027  6 Checking  No  No
 C028  7 Savings No  No
 C029  3 Checking  No  No
 C030  3 Savings No  No
-        
-### Dataset 4: Device Usage Patterns        
-        
-Depicted using network diagrams showing device connections.       
-        
-Customer ID Registered Devices  New Devices Used Last 24h Suspicious Device Activity  
-------------- --------------------  --------------------------- ----------------------------  
-C001  2 0 No  
-C002  1 5 Yes 
-C003  3 0 No  
-C004  2 0 No  
-C005  2 2 Yes 
-C006  2 0 No  
-C007  1 0 No  
-C008  2 0 No  
-C009  2 0 No  
-C010  2 0 No  
-C011  2 1 No  
-C012  2 0 No  
-C013  2 1 No  
-C014  2 0 No  
-C015  1 4 Yes 
-C016  2 0 No  
-C017  2 0 No  
-C018  2 0 No  
-C019  2 0 No  
-C020  1 0 No  
-C021  2 1 No  
-C022  2 0 No  
-C023  2 3 Yes 
-C024  2 0 No  
-C025  2 0 No  
-C026  2 0 No  
-C027  2 0 No  
-C028  2 0 No  
-C029  2 0 No  
-C030  2 2 Yes 
-        
-### Dataset 5: Transaction Location Analysis        
-        
-Visualized on a geographical heat map.        
-        
+
+### Dataset 4: Device Usage Patterns
+
+Customer ID Registered Devices  New Devices Used Last 24h Suspicious Device Activity
+------------- --------------------  --------------------------- ----------------------------
+C001  2 0 No
+C002  1 5 Yes
+C003  3 0 No
+C004  2 0 No
+C005  2 2 Yes
+C006  2 0 No
+C007  1 0 No
+C008  2 0 No
+C009  2 0 No
+C010  2 0 No
+C011  2 1 No
+C012  2 0 No
+C013  2 1 No
+C014  2 0 No
+C015  1 4 Yes
+C016  2 0 No
+C017  2 0 No
+C018  2 0 No
+C019  2 0 No
+C020  1 0 No
+C021  2 1 No
+C022  2 0 No
+C023  2 3 Yes
+C024  2 0 No
+C025  2 0 No
+C026  2 0 No
+C027  2 0 No
+C028  2 0 No
+C029  2 0 No
+C030  2 2 Yes
+
+### Dataset 5: Transaction Location Analysis
+
 Customer ID Home Location Transactions in Last 24h  Locations Used  Unusual Locations
 ------------- --------------- --------------------------  ----------------- -------------------
 C001  City A  City A  1 No
@@ -219,11 +198,9 @@ C027  City Y  City Y  1 No
 C028  City Z  City Z  1 No
 C029  City AA City AA 1 No
 C030  City F  City F  1 No
-        
-### Dataset 6: Merchant Category Codes (MCC) Analysis       
-        
-Shows spending patterns across different merchant categories.       
-        
+
+### Dataset 6: Merchant Category Codes (MCC) Analysis
+
 Customer ID Retail  Travel  Electronics Gambling
 ------------- --------  --------  ------------- ----------
 C001  70% 5%  10% 0%
@@ -256,157 +233,147 @@ C027  60% 10% 20% 0%
 C028  75% 5%  10% 0%
 C029  70% 10% 10% 0%
 C030  85% 5%  5%  0%
-        
-### Dataset 7: Customer Satisfaction Scores       
-        
-Data from customer surveys.       
-        
-Customer ID Satisfaction Score      
-------------- --------------------      
-C001  8.5     
-C002  6.0     
-C003  9.0     
-C004  8.0     
-C005  6.5     
-C006  7.5     
-C007  8.0     
-C008  8.2     
-C009  8.3     
-C010  8.5     
-C011  7.8     
-C012  8.1     
-C013  8.4     
-C014  8.6     
-C015  7.0     
-C016  7.5     
-C017  8.0     
-C018  8.2     
-C019  8.3     
-C020  8.5     
-C021  8.7     
-C022  8.8     
-C023  6.5     
-C024  8.2     
-C025  8.5     
-C026  8.0     
-C027  8.2     
-C028  8.3     
-C029  8.4     
-C030  7.5     
-        
-### Dataset 8: Internal Audit Flags       
-        
-Lists compliance-related issues.        
-        
-Customer ID AML Flags KYC Compliance Issues   
-------------- ----------- -----------------------   
-C001  No  No    
-C002  Yes Yes   
-C003  No  No    
-C004  No  No    
-C005  Yes No    
-C006  No  No    
-C007  No  No    
-C008  No  No    
-C009  Yes  Yes    
-C010  No  No    
-C011  No  No    
-C012  Yes  No    
-C013  No  No    
-C014  No  No    
-C015  Yes No    
-C016  No  No    
-C017  No  No    
-C018  No  Yes    
-C019  No  No    
-C020  No  No    
-C021  Yes  Yes    
-C022  No  No    
-C023  Yes Yes   
-C024  No  No    
-C025  No  No    
-C026  No  No    
-C027  Yes  Yes    
-C028  No  No    
-C029  No  No    
-C030  No  No    
-        
-### Dataset 9: Recent Customer Communications       
-        
-Records of recent interactions with customer support.       
-        
-Customer ID Contact Reason  Date    
-------------- --------------------------------- ------------    
-C001  Account Inquiry 2023-09-15    
-C002  No Recent Contact N/A   
-C003  Feedback on Service 2023-09-14    
-C004  Account Update  2023-09-13    
-C005  No Recent Contact N/A   
-C006  Balance Inquiry 2023-09-10    
-C007  Account Inquiry 2023-09-11    
-C008  Feedback on Service 2023-09-12    
-C009  Account Update  2023-09-13    
-C010  Account Inquiry 2023-09-14    
-C011  No Recent Contact N/A   
-C012  Balance Inquiry 2023-09-10    
-C013  Feedback on Service 2023-09-12    
-C014  Account Update  2023-09-13    
-C016  Account Inquiry 2023-09-14    
-C017  No Recent Contact N/A   
-C018  Balance Inquiry 2023-09-10    
-C019  Feedback on Service 2023-09-12    
-C020  Account Update  2023-09-13    
-C021  Account Inquiry 2023-09-14    
-C022  No Recent Contact N/A   
-C023  No Recent Contact N/A   
-C024  Balance Inquiry 2023-09-10    
-C025  Feedback on Service 2023-09-12    
-C026  Account Update  2023-09-13    
-C027  Account Inquiry 2023-09-14    
-C028  No Recent Contact N/A   
-C029  Balance Inquiry 2023-09-10    
-C030  Account Inquiry 2023-09-15    
-        
-### Dataset 10: Social Media Activity       
-        
-Analyzes customers' social media mentions related to the bank.        
-        
-Customer ID Positive Mentions Negative Mentions   
-------------- ------------------- -------------------   
-C001  2 0   
-C002  0 1   
-C003  1 0   
-C004  1 0   
-C005  0 0   
-C006  1 0   
-C007  2 0   
-C008  1 0   
-C009  0 0   
-C010  1 0   
-C011  1 0   
-C012  1 0   
-C013  1 0   
-C014  1 0   
-C015  0 1   
-C016  1 0   
-C017  1 0   
-C018  1 0   
-C019  1 0   
-C020  1 0   
-C021  1 0   
-C022  1 0   
-C023  0 1   
-C024  1 0   
-C025  1 0   
-C026  1 0   
-C027  1 0   
-C028  1 0   
-C029  1 0   
+
+### Dataset 7: Customer Satisfaction Scores
+
+Customer ID Satisfaction Score
+------------- --------------------
+C001  8.5
+C002  6.0
+C003  9.0
+C004  8.0
+C005  6.5
+C006  7.5
+C007  8.0
+C008  8.2
+C009  8.3
+C010  8.5
+C011  7.8
+C012  8.1
+C013  8.4
+C014  8.6
+C015  7.0
+C016  7.5
+C017  8.0
+C018  8.2
+C019  8.3
+C020  8.5
+C021  8.7
+C022  8.8
+C023  6.5
+C024  8.2
+C025  8.5
+C026  8.0
+C027  8.2
+C028  8.3
+C029  8.4
+C030  7.5
+
+### Dataset 8: Internal Audit Flags
+
+Customer ID AML Flags KYC Compliance Issues
+------------- ----------- -----------------------
+C001  No  No
+C002  Yes Yes
+C003  No  No
+C004  No  No
+C005  Yes No
+C006  No  No
+C007  No  No
+C008  No  No
+C009  Yes  Yes
+C010  No  No
+C011  No  No
+C012  Yes  No
+C013  No  No
+C014  No  No
+C015  Yes No
+C016  No  No
+C017  No  No
+C018  No  Yes
+C019  No  No
+C020  No  No
+C021  Yes  Yes
+C022  No  No
+C023  Yes Yes
+C024  No  No
+C025  No  No
+C026  No  No
+C027  Yes  Yes
+C028  No  No
+C029  No  No
+C030  No  No
+
+### Dataset 9: Recent Customer Communications
+
+Customer ID Contact Reason  Date
+------------- --------------------------------- ------------
+C001  Account Inquiry 2023-09-15
+C002  No Recent Contact N/A
+C003  Feedback on Service 2023-09-14
+C004  Account Update  2023-09-13
+C005  No Recent Contact N/A
+C006  Balance Inquiry 2023-09-10
+C007  Account Inquiry 2023-09-11
+C008  Feedback on Service 2023-09-12
+C009  Account Update  2023-09-13
+C010  Account Inquiry 2023-09-14
+C011  No Recent Contact N/A
+C012  Balance Inquiry 2023-09-10
+C013  Feedback on Service 2023-09-12
+C014  Account Update  2023-09-13
+C016  Account Inquiry 2023-09-14
+C017  No Recent Contact N/A
+C018  Balance Inquiry 2023-09-10
+C019  Feedback on Service 2023-09-12
+C020  Account Update  2023-09-13
+C021  Account Inquiry 2023-09-14
+C022  No Recent Contact N/A
+C023  No Recent Contact N/A
+C024  Balance Inquiry 2023-09-10
+C025  Feedback on Service 2023-09-12
+C026  Account Update  2023-09-13
+C027  Account Inquiry 2023-09-14
+C028  No Recent Contact N/A
+C029  Balance Inquiry 2023-09-10
+C030  Account Inquiry 2023-09-15
+
+### Dataset 10: Social Media Activity
+
+Customer ID Positive Mentions Negative Mentions
+------------- ------------------- -------------------
+C001  2 0
+C002  0 1
+C003  1 0
+C004  1 0
+C005  0 0
+C006  1 0
+C007  2 0
+C008  1 0
+C009  0 0
+C010  1 0
+C011  1 0
+C012  1 0
+C013  1 0
+C014  1 0
+C015  0 1
+C016  1 0
+C017  1 0
+C018  1 0
+C019  1 0
+C020  1 0
+C021  1 0
+C022  1 0
+C023  0 1
+C024  1 0
+C025  1 0
+C026  1 0
+C027  1 0
+C028  1 0
+C029  1 0
 C030  1 0
 
-### Dataset 11: Transcripts of calls made by the customers  
-        
-
+### Dataset 11: Transcripts of Calls Made by the Customers
 
 Call 1: Customer ID C002
 
@@ -423,7 +390,7 @@ Agent: No worries. Let's try another one. What is the street name where you grew
 C002: I'm not sure about that one either. Is there another way I can verify my identity?
 
 Agent: I can't authorize you unless you know your identity questions.
- 
+
 Call 2: Customer ID C005
 
 Agent: Thank you for calling Contoso Bank. How may I assist you today?
@@ -445,7 +412,7 @@ C005: Yes, I'd like to register my banking on my new iPhone I've purchased, as w
 Agent: You can simply download the app, and use your previous device to help authenticate it as a second factor check. Do you still have your old device?
 
 C005: Yes, I do. Ok that sounds great thanks!
- 
+
 Call 3: Customer ID C006
 
 Agent: Welcome to Contoso Bank. How can I help you today?
@@ -461,7 +428,7 @@ Agent: Thank you. Let me check... It appears the amount charged was $75. Is that
 C006: Yes, but I only spent $55. Can we dispute this charge?
 
 Agent: Absolutely. I'll initiate a dispute for you. You'll receive updates via email.
- 
+
 Call 4: Customer ID C008
 
 Agent: Thank you for calling Contoso Bank. How may I assist you today?
@@ -477,7 +444,7 @@ Agent: Thank you. Your current savings account interest rate is 1.5% annually.
 C008: Great, thank you for the information. That's all I needed.
 
 Agent: You're welcome! Have a great day.
- 
+
 Call 5: Customer ID C025
 
 Agent: Good day! Thank you for calling Contoso Bank. How can I help you today?
@@ -493,7 +460,7 @@ Agent: Thank you. I've sent the code. Please let me know once you receive it.
 C025: I got it. The code is 6789.
 
 Agent: Perfect. Your password has been reset. You'll receive an email with further instructions.
- 
+
 Call 6: Customer ID C030
 
 Agent: Welcome to Contoso Bank. How may I help you?
@@ -542,9 +509,7 @@ C015: Yes, I'm ready.
 
 Agent: Great, let's begin!
 
-
-### Dataset 12: Recent purchases for customers  
-
+### Dataset 12: Recent Purchases for Customers
 
 Customer ID Item  Price
 C002  SIM Card - Brand A  $10.00
@@ -573,5 +538,3 @@ C028  Running Shoes - Brand X $80.00
 C028  Yoga Mat  $25.00
 C028  Fitness Tracker $99.00
 C028  Dumbbells Set $40.00
-
-</background>
