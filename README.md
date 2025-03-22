@@ -1,6 +1,6 @@
-# FSI reasoning usecase examples lab
+# FSI reasoning usecase examples
 
-This repository contains various use case examples for reasoning with LLMs.
+This repository contains a collection of use case examples demonstrating reasoning capabilities with large language models (LLMs) like O1.
 
 ## Use Cases
 
