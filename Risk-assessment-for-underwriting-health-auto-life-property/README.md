@@ -1,4 +1,3 @@
----
 # 📘 Use Case Description: Auto Insurance Risk Evaluation for Compliance and Transparency
 
 ## 🔍 What Is This Use Case About?
@@ -138,5 +137,4 @@ The **O1 model** thrives in such tasks, thanks to its:
 
 This makes it a trusted assistant for **regulatory-heavy, high-stakes insurance workflows**.
 
----
 
