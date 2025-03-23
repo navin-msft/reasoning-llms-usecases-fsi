@@ -1,113 +1,107 @@
-# 📘 Credit Risk Assessment – Use Case Overview
+# 📘 Use Case Description: Property Insurance Claims Processing for Burst Pipe & Mold Damage
 
-## What Is This Use Case About?
+## 🔍 What Is This Use Case About?
 
-This use case helps a bank decide whether to **approve or reject a mortgage loan** application. It uses a **credit risk assessment model** to analyze a customer's financial situation, employment, and the property they want to buy.
+This use case helps an **insurance claims adjuster** evaluate a real-world homeowner's insurance claim involving:
+- Water damage from a **burst pipe**, and
+- Resulting **mold growth**.
 
-The goal is to make smart, data-based decisions that protect the bank while giving customers fair access to loans.
+The adjuster’s goal is to **determine how much of the damage is covered**, what payout the policyholder should receive, and what next steps are needed — all in a **clear, logical, and audit-ready format**.
 
----
-
-## 🔍 Real-Life Scenario
-
-Imagine you're a loan officer at a bank. A customer wants to borrow **$200,000** to buy a house worth **$250,000**. You need to figure out:
-
-- Can they afford it?
-- Is the loan safe for the bank?
-- Should the loan be approved, rejected, or approved with conditions?
-
-This prompt walks through how to assess that decision using structured data and policy rules.
+It’s designed to showcase how the **O1 model** excels in tasks that require:
+- Structured analysis,
+- Precise referencing of policy documents, and
+- Transparent decision-making that can be used in audits or legal reviews.
 
 ---
 
 ## 🧩 What Information Is Used?
 
-We look at two main types of information:
+The adjuster has access to **policy documents, cost estimates, and claim notes**:
 
-### 1. **Customer Financial Profile**
-- Credit score (How reliable they are with credit)
-- Debt-to-income ratio (How much debt they have vs. income)
-- Loan-to-value ratio (How big the loan is compared to the house value)
-- Employment status (Are they employed full-time, part-time, etc.?)
-- Income and savings
-- Other debts (e.g., car loans, credit cards)
+### ✅ 1. Policy Coverage Details
+These outline what’s covered and how much:
+- **Dwelling Coverage**: Up to $200,000 for the structure.
+- **Personal Property**: Up to $50,000.
+- **Mold Remediation**: Capped at **$3,000 per claim**.
+- **Deductible**: $1,000 (what the policyholder pays first).
 
-### 2. **House & Market Information**
-- Property value
-- Neighborhood safety and school ratings
-- Real estate market trends
-- Offered interest rate
+### ✅ 2. Cost Estimates
+- **Structural Repairs**: $12,000 (drywall, flooring, cabinets).
+- **Personal Property Loss**: $2,000 (appliances, furniture).
+- **Mold Cleanup**: $2,500 (confirmed by inspection).
 
----
-
-## 🧠 How Does the Decision Work?
-
-### Step 1: **Rate Each Criterion**
-Each factor is rated from A (best) to D (riskier). For example:
-- A credit score above 700 = A
-- Debt-to-income ratio between 30–39% = B
-- Employment is full-time and stable = A
-
-### Step 2: **Create a Composite Rating**
-Combine all the individual ratings into one string, like `ABACA`.
-
-### Step 3: **Check Bank Policy**
-Each composite rating has a defined:
-- **Maximum loan amount**
-- **Minimum interest rate**
-
-Using `ABACA`, the bank knows how much they can safely lend and the lowest interest rate they can offer.
-
-### Step 4: **Compare With Customer Request**
-Check if the customer’s **requested loan** and the **offered interest rate** are within allowed limits.
-
-### Step 5: **Make a Decision**
-Based on:
-- Their rating
-- Their savings and debt
-- The condition of the market and property
-
-The bank decides to:
-- ✅ Approve the loan
-- ⚠️ Approve with conditions (e.g., larger down payment)
-- ❌ Reject the loan
+### ✅ 3. Adjuster’s Notes
+- A licensed plumber confirmed the pipe burst.
+- Water exposure lasted 36–48 hours before discovery.
+- Mold was found behind cabinets and in drywall.
 
 ---
 
-## 📝 Example
+## 🧠 What Does the Claims Adjuster Need To Do?
 
-**Customer:**
-- Credit Score: 720 → A
-- Debt-to-Income: 35% → B
-- Loan-to-Value: 80% → C
-- Employment: Full-time → A
-- Market Trend: Stable → B
+The task is to **analyze the claim step-by-step**, by:
 
-**Composite Rating:** `ABACB`
-
-**Policy Table Lookup:**  
-`ABACB` allows a max loan of $300,000 and minimum interest rate of 4.25%.
-
-**Customer Request:**  
-Loan of $200,000 at 4.00% — **both are within limits**, so the loan may be approved.
+1. **Verifying what’s covered**: Are all the damages eligible under the policy? Are there exclusions or sub-limits?
+2. **Calculating the payout**:
+   - Apply the deductible in the correct order.
+   - Check whether the mold costs are within the policy limit.
+3. **Structuring the recommendation**:
+   - Provide a **net payout estimate**.
+   - Flag what documentation or approvals are still needed.
+4. **Ensuring compliance**:
+   - Identify any issues that require supervisor review.
+   - List policyholder options if part of the claim isn’t covered.
 
 ---
 
-## 💡 Why This Matters
+## 🎯 Example Outcomes
 
-This use case is important because it:
-- Helps banks **avoid risky loans**
-- Ensures **fair treatment** of customers
-- Makes decisions **consistent and transparent**
-- Can be **automated** to save time and reduce errors
+Let’s look at what the model might determine:
+
+- **Structural Damage**: Covered under dwelling section → Pay $11,000 after $1,000 deductible.
+- **Personal Property**: Fully covered → Pay $2,000.
+- **Mold Remediation**: Claimed $2,500, under $3,000 limit → Fully covered.
+
+➡️ **Total payout** recommendation: **$15,000**  
+✅ Claim is within coverage limits  
+📌 Still need signed plumber affidavit before final approval.
+
+---
+
+## 💡 Why Is This Important?
+
+This kind of claims evaluation is common but **highly regulated**. It requires:
+
+- **Precision**: Every number and clause must be correct.
+- **Audit-readiness**: The file might be reviewed later by legal, regulatory, or compliance teams.
+- **Transparency**: No guessing — just facts, calculations, and logic.
+
+This use case mirrors how real-world adjusters work — and why AI that mimics their **structured, cautious approach** is valuable.
 
 ---
 
 ## 👤 Who Is This For?
 
-- Bank underwriters and analysts
-- AI model developers for financial services
-- Risk and compliance officers
-- Anyone interested in how loan decisions are made using data
+- Insurance claims professionals
+- Regulatory and compliance officers
+- AI developers building insurance automation tools
+- Legal and audit teams reviewing claims decisions
 
+---
 
+## ✅ Summary
+
+This use case is a test of **data-driven claims assessment** for property insurance. The model is expected to:
+- Reference specific policy terms
+- Justify decisions line-by-line
+- Apply deductibles and sub-limits correctly
+- Recommend next steps with confidence and clarity
+
+The **O1 model** is especially well-suited here because it:
+- Avoids filler and irrelevant output
+- Excels at deterministic, reproducible logic
+- Provides decisions that can stand up to compliance scrutiny
+- Breaks down reasoning like a human claims expert
+
+In short: It’s the ideal assistant for real-world, **high-stakes insurance work**.
