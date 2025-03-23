@@ -4,7 +4,7 @@ This repository contains a collection of use case examples demonstrating reasoni
 
 ## Use Cases
 
-### 📘 [Auto Insurance Risk Evaluation](./Risk-assessment-for-underwriting-health-auto-life-property/README.md)
+### 📘 [Auto Insurance Risk Evaluation](./risk-assessment-for-underwriting-health-auto-life-property/README.md)
 Evaluates an auto insurance application using datasets like telematics, driving history, and vehicle maintenance logs. Emphasizes traceable, compliance-ready risk classification and justifies premium adjustments.
 
 ### 📘 [Cross-Asset Volatility and Sentiment Forecasting](./market-sentiment-and-volatility-forecasting/README.md)
