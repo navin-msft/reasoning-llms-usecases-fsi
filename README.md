@@ -49,8 +49,13 @@ To run the notebook, follow these steps:
 
 2. Create and activate a virtual environment:
     ```sh
+    # For Linux/macOS:
     python3 -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    source venv/bin/activate
+
+    # For Windows:
+    python -m venv venv
+    .\venv\Scripts\activate
     ```
 
 3. Install the required dependencies:
