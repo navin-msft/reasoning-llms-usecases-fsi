@@ -43,8 +43,8 @@ To run the notebook, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/reasoning-llms-fsi-lab.git
-    cd reasoning-llms-fsi-lab
+    git clone https://github.com/dhangerkapil/reasoning-llms-usecases-fsi.git
+    cd reasoning-llms-usecases-fsi
     ```
 
 2. Create and activate a virtual environment:
