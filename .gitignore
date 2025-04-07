@@ -11,11 +11,15 @@ __pycache__/
 
 # Environment variables
 .env
+.venv
+.roenv
 
 # Virtual environment
 venv/
 env/
 venv-lab/
+roenv/
+roenv-lib/
 
 # VS Code settings
 .vscode/
