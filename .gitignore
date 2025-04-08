@@ -20,6 +20,8 @@ env/
 venv-lab/
 roenv/
 roenv-lib/
+.roenv/
+.roenv-lib/
 
 # VS Code settings
 .vscode/
